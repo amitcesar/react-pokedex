@@ -33,11 +33,11 @@ export default function PokemonCard( {pokemon} ) {
         <div className="poke-img">
           <img src={`https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png`} alt='Poke'/>
         </div>
+
       <div className="info">
         <span className="number">#{markNumber}</span> 
         <h3 className="name"> {name}</h3>
       <small className="type">Type: {type} </small>
-
       </div>
     </div>
   );

@@ -24,7 +24,6 @@ function App() {
         })
       })
     }
-    
     loadPokemons()
     pokeRow();
   }, [pokeNumber] );
@@ -35,13 +34,12 @@ function App() {
     <>
     <h1>PokeDex</h1>
       <div className="poke-container">
+
       {pokemon.map(pokemon=> (
       <PokemonCard key={pokemon.name} pokemon={pokemon}></PokemonCard>
       ))}
     </div>
-
     </>
-    
       
   ); 
 }
